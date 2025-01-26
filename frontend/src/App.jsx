@@ -3,7 +3,7 @@ import "./App.css";
 import io from "socket.io-client";
 import Editor from "@monaco-editor/react";
 
-const socket = io("http://localhost:5001");
+const socket = io("https://realtime-code-compiler-final-htvl.vercel.app");
 
 const App = () => {
   const [joined, setJoined] = useState(false);

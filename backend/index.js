@@ -10,7 +10,8 @@ const server = http.createServer(app);
 
 const io = new Server(server, {
     cors: {
-        origin: "*",
+        origin: "https://realtime-code-compiler-final-c9l1.vercel.app",
+        methods: ["GET", "POST"]
     },
 });
 
